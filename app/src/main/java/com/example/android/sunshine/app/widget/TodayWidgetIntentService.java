@@ -28,7 +28,7 @@ import android.widget.RemoteViews;
 
 import com.example.android.sunshine.app.MainActivity;
 import com.example.android.sunshine.app.R;
-import com.example.android.sunshine.app.Utility;
+import com.example.android.sunshine.app.utils.Utility;
 import com.example.android.sunshine.app.data.WeatherContract;
 
 /**

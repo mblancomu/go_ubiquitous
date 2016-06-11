@@ -27,6 +27,7 @@ import android.preference.PreferenceManager;
 
 import com.example.android.sunshine.app.data.WeatherContract;
 import com.example.android.sunshine.app.sync.SunshineSyncAdapter;
+import com.example.android.sunshine.app.utils.Utility;
 
 /**
  * A {@link PreferenceActivity} that presents a set of application settings.
