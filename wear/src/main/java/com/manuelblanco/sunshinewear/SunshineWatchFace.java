@@ -21,6 +21,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -29,12 +30,21 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.wearable.watchface.CanvasWatchFaceService;
 import android.support.wearable.watchface.WatchFaceStyle;
 import android.text.format.Time;
 import android.view.SurfaceHolder;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.wearable.DataApi;
+import com.google.android.gms.wearable.DataEventBuffer;
+import com.google.android.gms.wearable.Wearable;
+
 import java.lang.ref.WeakReference;
+import java.util.Calendar;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
@@ -86,21 +96,56 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
         }
     }
 
-    private class Engine extends CanvasWatchFaceService.Engine {
+    private class Engine extends CanvasWatchFaceService.Engine implements DataApi.DataListener,
+            GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener{
+
         final Handler mUpdateTimeHandler = new EngineHandler(this);
         boolean mRegisteredTimeZoneReceiver = false;
         Paint mBackgroundPaint;
         Paint mHandPaint;
         boolean mAmbient;
+        private Calendar mCalendar;
         Time mTime;
+        int mTapCount;
+        Paint mTextPaint;
+        Paint mDatePaint;
+        Paint mDateAmbientPaint;
+        Paint mMaxTempPaint;
+        Paint mMinTempPaint;
+        Paint mMinTempAmbientPaint;
+
+        float mXOffsetTime;
+        float mXOffsetDate;
+        float mXOffsetTimeAmbient;
+
+        float mTimeYOffset;
+        float mDateYOffset;
+        float mDividerYOffset;
+        float mWeatherYOffset;
+
+        float mLineHeight;
+
+        Bitmap mWeatherIcon;
+
+        String mWeatherHigh;
+        String mWeatherLow;
+
         final BroadcastReceiver mTimeZoneReceiver = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
-                mTime.clear(intent.getStringExtra("time-zone"));
-                mTime.setToNow();
+
+                mCalendar.setTimeZone(TimeZone.getDefault());
+                long now = System.currentTimeMillis();
+                mCalendar.setTimeInMillis(now);
+
             }
         };
-        int mTapCount;
+
+        GoogleApiClient mClient = new GoogleApiClient.Builder(SunshineWatchFace.this)
+                .addConnectionCallbacks(this)
+                .addOnConnectionFailedListener(this)
+                .addApi(Wearable.API)
+                .build();
 
         /**
          * Whether the display supports fewer bits for each color in ambient mode. When true, we
@@ -120,17 +165,61 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                     .build());
 
             Resources resources = SunshineWatchFace.this.getResources();
+            mCalendar = Calendar.getInstance();
 
+            drawDigitalWatch(resources);
+            drawAnalogWatch(resources);
+
+        }
+
+        private void drawDigitalWatch(Resources resources){
+            //Digital components
+            mTimeYOffset = resources.getDimension(R.dimen.time_y_offset);
+            mDateYOffset = resources.getDimension(R.dimen.date_y_offset);
+            mDividerYOffset = resources.getDimension(R.dimen.divider_y_offset);
+            mWeatherYOffset = resources.getDimension(R.dimen.weather_y_offset);
+            mLineHeight = resources.getDimension(R.dimen.line_height);
+
+            //Background colors
             mBackgroundPaint = new Paint();
             mBackgroundPaint.setColor(resources.getColor(R.color.background));
 
+            //Text for the digital watch
+            mTextPaint = new Paint();
+            mTextPaint = createTextPaint(resources.getColor(R.color.digital_text));
+            mDatePaint = new Paint();
+            mDatePaint = createTextPaint(resources.getColor(R.color.primary_light));
+            mDateAmbientPaint = new Paint();
+            mDateAmbientPaint = createTextPaint(Color.WHITE);
+            mMaxTempPaint = createBoldTextPaint(Color.WHITE);
+            mMinTempPaint = createTextPaint(resources.getColor(R.color.primary_light));
+            mMinTempAmbientPaint = createTextPaint(Color.WHITE);
+
+        }
+
+        private void drawAnalogWatch(Resources resources){
+            //Analogs components
             mHandPaint = new Paint();
             mHandPaint.setColor(resources.getColor(R.color.analog_hands));
             mHandPaint.setStrokeWidth(resources.getDimension(R.dimen.analog_hand_stroke));
             mHandPaint.setAntiAlias(true);
             mHandPaint.setStrokeCap(Paint.Cap.ROUND);
+        }
 
-            mTime = new Time();
+        private Paint createTextPaint(int textColor) {
+            Paint paint = new Paint();
+            paint.setColor(textColor);
+            paint.setTypeface(NORMAL_TYPEFACE);
+            paint.setAntiAlias(true);
+            return paint;
+        }
+
+        private Paint createBoldTextPaint(int textColor) {
+            Paint paint = new Paint();
+            paint.setColor(textColor);
+            paint.setTypeface(BOLD_TYPEFACE);
+            paint.setAntiAlias(true);
+            return paint;
         }
 
         @Override
@@ -298,6 +387,26 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                         - (timeMs % INTERACTIVE_UPDATE_RATE_MS);
                 mUpdateTimeHandler.sendEmptyMessageDelayed(MSG_UPDATE_TIME, delayMs);
             }
+        }
+
+        @Override
+        public void onConnected(@Nullable Bundle bundle) {
+
+        }
+
+        @Override
+        public void onConnectionSuspended(int i) {
+
+        }
+
+        @Override
+        public void onDataChanged(DataEventBuffer dataEventBuffer) {
+
+        }
+
+        @Override
+        public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+
         }
     }
 }
