@@ -2,130 +2,74 @@
 <items version="2" >
 
     <item
-        jar="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.3.0/jars/classes.jar"
+        jar="/Users/manuel/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
         jumboMode="true"
-        revision="23.0.1"
-        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
-        <dex dex="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-23.3.0_39f78b91a51799b5918a54a59c31d55cd5bc8c1d.jar" />
+        revision="23.0.3"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.0.1_9d6e9976e3183f0ef5eb76b26b5f8301bd361310/classes.dex" />
     </item>
     <item
-        jar="/Users/manuel/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
+        jar="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
-        revision="23.0.1"
-        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
-        <dex dex="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/pre-dexed/debug/support-annotations-23.3.0_819fc5e9e194efcfbaf36f243ac688c00c44d351.jar" />
+        revision="23.0.3"
+        sha1="eedbbcb228e1b09166e694d9a2ffad4771622159">
+        <dex dex="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_4424f80e7b48222d27939f40e5325151efaf3cec/classes.dex" />
     </item>
     <item
-        jar="/Users/manuel/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.5.2/ecf534dba3a8446ce84cbb797d314763be212a68/glide-3.5.2.jar"
+        jar="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
         jumboMode="true"
-        revision="23.0.1"
-        sha1="ecf534dba3a8446ce84cbb797d314763be212a68">
-        <dex dex="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/pre-dexed/debug/glide-3.5.2_6e75b57c20835f0f375a07600dc7dcf0dc90c943.jar" />
+        revision="23.0.3"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.0.1_e8829d8fd774e031c1fdfada1a24d1e0f17207f3/classes.dex" />
     </item>
     <item
-        jar="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
+        jar="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/8.4.0/jars/classes.jar"
         jumboMode="true"
-        revision="23.0.1"
-        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
-        <dex dex="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.3.0_dc03ea475f7755c871d079f7eea831f0a1bbb781.jar" />
+        revision="23.0.3"
+        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
+        <dex dex="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-8.4.0_adea371f5d2a633d1292ffe3d4a945c3b7ef7364/classes.dex" />
     </item>
     <item
-        jar="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/exploded-aar/com.android.support/palette-v7/23.3.0/jars/classes.jar"
+        jar="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
         jumboMode="true"
-        revision="23.0.1"
-        sha1="d41792854b7fb173e61c2bfea5044fd47df76114">
-        <dex dex="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/pre-dexed/debug/com.android.support-palette-v7-23.3.0_20c5b284c241b1e2dec41e0821b91bf394142ce0.jar" />
+        revision="23.0.3"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.0.1_54f288a4b9bdd50ed809367ec41e40fd8ffb2109/classes.dex" />
     </item>
     <item
-        jar="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/23.1.0/jars/classes.jar"
+        jar="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
         jumboMode="true"
-        revision="23.0.1"
-        sha1="3713f30726299231eddfb206043ebb72a2519b6f">
-        <dex dex="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/pre-dexed/debug/com.android.support-gridlayout-v7-23.1.0_88c1d5dff4ad19296f25b618176a0f7089aa86d9.jar" />
+        revision="23.0.3"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.1_6ff7ea8c970e2508e804555b477fb6df78495b61/classes.dex" />
     </item>
     <item
-        jar="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
         jumboMode="true"
-        revision="23.0.1"
-        sha1="6d322861119be45d0a6b2c7a6f0f1246fbbcf799">
-        <dex dex="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/pre-dexed/debug/instant-run_55d666e330cd0d464eef170535aa226c0af12f5a.jar" />
+        revision="23.0.3"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-8.4.0_b5d4c5675361bc3925631056bd8b7e554406dd15/classes.dex" />
     </item>
     <item
-        jar="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jar="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
         jumboMode="true"
-        revision="23.0.1"
-        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
-        <dex dex="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/pre-dexed/debug/internal_impl-23.3.0_2acadc4f8b523a7e9c48a1e5f1cd41c642ee8e03.jar" />
+        revision="23.0.3"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.4.0_777bb843f4840e3938e5f29ab1062cc785cf3ee1/classes.dex" />
     </item>
     <item
-        jar="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/exploded-aar/com.android.support/support-v13/23.3.0/jars/classes.jar"
+        jar="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
-        revision="23.0.1"
-        sha1="a809555a2599054c3dcd1bf82b089315ac3a11df">
-        <dex dex="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/pre-dexed/debug/com.android.support-support-v13-23.3.0_273024407919f1268ffda227da0d1231b68dd4aa.jar" />
+        revision="23.0.3"
+        sha1="b49154b05e93cf660ae64e3e40683b2eddbdac99">
+        <dex dex="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2259f21ae2c6228f66f83d04872b10ead2310ed0/classes.dex" />
     </item>
     <item
-        jar="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/jars/classes.jar"
+        jar="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.4.0/jars/classes.jar"
         jumboMode="true"
-        revision="23.0.1"
-        sha1="debf30ce0a7560396b6235edef77e447006454c2">
-        <dex dex="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.3.0_48fe87cc429c606d69944bc0968683168fbc9ee6.jar" />
-    </item>
-    <item
-        jar="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/exploded-aar/com.android.support/support-v13/23.3.0/jars/libs/internal_impl-23.3.0.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="8813bdcf7583107c4873150075d17c8072ec50cf">
-        <dex dex="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/pre-dexed/debug/internal_impl-23.3.0_ac77c3a0be5fbb28d18a19a73d4b22f584a3dd68.jar" />
-    </item>
-    <item
-        jar="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.5.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
-        <dex dex="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-7.5.0_a6badd1c6b8868d9c357dbc7e9956c850ac1317d.jar" />
-    </item>
-    <item
-        jar="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="e9e7a66b6a9992ced7e59ee01b1626a9db80a120">
-        <dex dex="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_a744c4187f469ba0bbdde60b9ea773c67b8e5294.jar" />
-    </item>
-    <item
-        jar="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
-        <dex dex="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.3.0_3a2d3b6a01624b73d58577ee16031cfb8934d230.jar" />
-    </item>
-    <item
-        jar="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="a78183f30e769a98ab4820794f597763088d3065">
-        <dex dex="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-7.5.0_60641e9c97baf34aa29d58940e1e4fa2e08909cf.jar" />
-    </item>
-    <item
-        jar="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
-        <dex dex="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.3.0_063a5149ff1b098b4ec1c4c18a32ad49df6c8d42.jar" />
-    </item>
-    <item
-        jar="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
-        <dex dex="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.3.0_19ea4064d6d4ddd29970032787eb94ef4219cad7.jar" />
-    </item>
-    <item
-        jar="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
-        <dex dex="/Users/manuel/Documents/APPS/Android/go_ubiquitous/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.3.0_64679da17fa11e1b1000859738c654f0d8954b32.jar" />
+        revision="23.0.3"
+        sha1="40a6fbd08fdbb71c74751916201e5fd8694e16ca">
+        <dex dex="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.support-wearable-1.4.0_7347edb5e71b65f1790f6c1aff5b7f7692b6a576/classes.dex" />
     </item>
 
 </items>
