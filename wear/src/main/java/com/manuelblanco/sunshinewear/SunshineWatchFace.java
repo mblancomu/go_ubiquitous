@@ -121,7 +121,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
         Paint mHandPaint;
         boolean mAmbient;
         private Calendar mCalendar;
-        Time mTime;
+        //Time mTime;
         int mTapCount;
         Paint mTextPaint;
         Paint mDatePaint;
@@ -305,7 +305,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
 
         @Override
         public void onDraw(Canvas canvas, Rect bounds) {
-            mTime.setToNow();
+           // mTime.setToNow();
 
             // Draw the background.
             if (isInAmbientMode()) {

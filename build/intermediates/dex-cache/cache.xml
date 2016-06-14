@@ -12,7 +12,7 @@
         jar="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="eedbbcb228e1b09166e694d9a2ffad4771622159">
+        sha1="6431e78ad9d0efc4965da7c9a31d0c29d5b665b5">
         <dex dex="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_4424f80e7b48222d27939f40e5325151efaf3cec/classes.dex" />
     </item>
     <item
@@ -61,7 +61,7 @@
         jar="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="b49154b05e93cf660ae64e3e40683b2eddbdac99">
+        sha1="a6449258e9526a72fdc100f7f219977d0a5ce045">
         <dex dex="/Users/manuel/Documents/APPS/go_ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2259f21ae2c6228f66f83d04872b10ead2310ed0/classes.dex" />
     </item>
     <item
