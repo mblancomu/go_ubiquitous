@@ -1,6 +1,14 @@
 package utils;
 
+import android.content.Context;
+import android.content.res.Resources;
+
 import com.manuelblanco.sunshinewear.R;
+
+import java.text.Format;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Created by manuel on 11/06/16.
@@ -40,5 +48,24 @@ public class Utilities {
             return R.drawable.art_clouds;
         }
         return -1;
+    }
+
+    public static String getMonthOfYearString() {
+
+        Format formatter = new SimpleDateFormat("MMM");
+
+        return formatter.format(new Date());
+    }
+
+    public static String getDayOfWeekString() {
+
+        Format formatter = new SimpleDateFormat("EEE");
+
+        return formatter.format(new Date());
+    }
+
+    public static String getAmPmString(Resources resources, int am_pm) {
+        return am_pm == Calendar.AM ?
+                resources.getString(R.string.am) : resources.getString(R.string.pm);
     }
 }
